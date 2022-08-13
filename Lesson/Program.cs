@@ -63,6 +63,7 @@ Console.Clear();
 
 // double result = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
 // Console.WriteLine($"result = {Math.Round(result, 2)}");
+// Console.WriteLine($"Расстояние = {result:f2}");
 
 //----------------------------------------------------------------
 
@@ -77,12 +78,21 @@ Console.Write("Введите число N: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 if (number < 0) number = number * (-1);
+//----------------------------------------------------------------
 
-int i = 1;
-while (i <= number)
+// int i = 1;
+// while (i <= number)
+// {
+//     double result = Math.Pow(i,2);
+//     Console.Write($" {result}");
+//     i++;
+// }
+//----------------------------------------------------------------
+
+for (int i = 1; i <= number; i++)
 {
     double result = Math.Pow(i,2);
-    Console.Write($" {result}");
-    i++;
+    Console.Write($"{result} ");
+    
 }
 //----------------------------------------------------------------
